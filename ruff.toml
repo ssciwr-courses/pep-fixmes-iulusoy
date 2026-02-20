@@ -1,0 +1,8 @@
+[lint]
+select = [
+    "E",    # pycodestyle errors
+    "W",    # pycodestyle warnings
+    "F",    # Pyflakes
+    "A",    # flake8-builtins (catches 'list' variable shadowing)
+    "C4",   # flake8-comprehensions
+]
