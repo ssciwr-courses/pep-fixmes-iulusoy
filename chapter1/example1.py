@@ -2,15 +2,15 @@ import os
 from pathlib import Path
 
 
-
-
 # find all png files in a folder
-def find_files(path: str=None, pattern: str="*.png",
+def find_files(path: str = None, pattern: str = "*.png",
                limit: int = 20) -> list:
     """Find image files on the file system.
 
     :param path:
-        The base directory where we are looking for the images. Defaults to None, which uses the XDG data directory if set or the current working directory otherwise.
+        The base directory where we are looking for the images.
+        Defaults to None, which uses the XDG data directory if set
+        or the current working directory otherwise.
     :param pattern:
         The naming pattern that the filename should match. Defaults to
         "*.png". Can be used to allow other patterns or to only include
@@ -28,8 +28,9 @@ def find_files(path: str=None, pattern: str="*.png",
     if limit is not None:
         result = result[:limit]
 
-    return result 
+    return result
 
-if __name__=="__main__":
-    list = find_files(path="./data/")
-    print("Found files {}".format(list))
+
+if __name__ == "__main__":
+    list_ = find_files(path="./data/")
+    print("Found files {}".format(list_))
