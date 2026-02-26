@@ -1,5 +1,6 @@
 import numpy as np
 
+
 def area_circ(r_in ):
     """Calculate the area of a circle with given radius.
 
